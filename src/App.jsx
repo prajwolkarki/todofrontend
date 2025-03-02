@@ -19,11 +19,7 @@ const App = () => {
           <Route path="/2fa" element={<TwoFactorAuth />} />
           <Route
             path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <TaskManager />
-              </ProtectedRoute>
-            }
+            element={<TaskManager />}
           />
         </Routes>
       </AuthProvider>
